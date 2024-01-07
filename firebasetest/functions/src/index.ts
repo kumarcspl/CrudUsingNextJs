@@ -34,7 +34,7 @@ app.post('/users', async (req, res) => {
     res.set('Access-Control-Allow-Origin', '*'); 
     return res.status(201).json({ message: 'User added', id: newUser.id });
   } catch (error) {
-    return res.status(500).json({ message: 'Failed to add user', err:error  });
+    return res.status(500).json({ message: 'Failed to add user' });
   }
 });
 
